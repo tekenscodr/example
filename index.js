@@ -5,7 +5,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res)=>{
-  res.send("You are in the server");
+  res.json("You are in the server");
 })
 
 const PORT = 3000
